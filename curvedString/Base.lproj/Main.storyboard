@@ -16,6 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="VMk-Io-Bk4">
+                                <rect key="frame" x="-2" y="20" width="604" height="31"/>
+                                <connections>
+                                    <action selector="updateRadius:" destination="vXZ-lx-hvc" eventType="valueChanged" id="5iD-9J-jZP"/>
+                                </connections>
+                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5l-tn-DQG" customClass="curvedLabel">
                                 <rect key="frame" x="0.0" y="200" width="600" height="400"/>
                                 <constraints>
@@ -25,14 +31,33 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ENDURANCE        BUILD        LOL" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aHd-Sr-ZUp">
+                                <rect key="frame" x="0.0" y="50" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="light" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="dek-Du-AvJ"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VMk-Io-Bk4" firstAttribute="width" secondItem="aHd-Sr-ZUp" secondAttribute="width" id="AXh-8U-Uu4"/>
+                            <constraint firstItem="aHd-Sr-ZUp" firstAttribute="top" secondItem="VMk-Io-Bk4" secondAttribute="bottom" id="EpO-yy-EUj"/>
                             <constraint firstAttribute="centerX" secondItem="j5l-tn-DQG" secondAttribute="centerX" id="RHb-KT-7DR"/>
+                            <constraint firstAttribute="centerX" secondItem="VMk-Io-Bk4" secondAttribute="centerX" id="Tx8-Jw-tcK"/>
                             <constraint firstItem="j5l-tn-DQG" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="bpD-bK-4mr"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="j5l-tn-DQG" secondAttribute="bottom" id="fwJ-P3-mMy"/>
+                            <constraint firstItem="VMk-Io-Bk4" firstAttribute="centerX" secondItem="aHd-Sr-ZUp" secondAttribute="centerX" id="hi2-IO-WYW"/>
+                            <constraint firstItem="VMk-Io-Bk4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="rYO-iP-EXp"/>
+                            <constraint firstItem="VMk-Io-Bk4" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="zCa-k3-Ppd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="curvedStringLabel" destination="j5l-tn-DQG" id="wS2-E2-NHK"/>
+                        <outlet property="radiusSlider" destination="VMk-Io-Bk4" id="298-A2-aYQ"/>
+                        <outlet property="textString" destination="aHd-Sr-ZUp" id="aAU-Jr-Lmz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
