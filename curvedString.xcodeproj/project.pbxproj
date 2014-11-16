@@ -14,6 +14,7 @@
 		EFCDC78D1A187C8700B1F7F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCDC78C1A187C8700B1F7F2 /* Images.xcassets */; };
 		EFCDC7901A187C8700B1F7F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCDC78E1A187C8700B1F7F2 /* LaunchScreen.xib */; };
 		EFCDC79C1A187C8700B1F7F2 /* curvedStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCDC79B1A187C8700B1F7F2 /* curvedStringTests.m */; };
+		EFCDC7A71A187D2D00B1F7F2 /* curvedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCDC7A61A187D2D00B1F7F2 /* curvedLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		EFCDC7951A187C8700B1F7F2 /* curvedStringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = curvedStringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCDC79A1A187C8700B1F7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFCDC79B1A187C8700B1F7F2 /* curvedStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curvedStringTests.m; sourceTree = "<group>"; };
+		EFCDC7A51A187D2D00B1F7F2 /* curvedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curvedLabel.h; sourceTree = "<group>"; };
+		EFCDC7A61A187D2D00B1F7F2 /* curvedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = curvedLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				EFCDC7841A187C8700B1F7F2 /* AppDelegate.m */,
 				EFCDC7861A187C8700B1F7F2 /* ViewController.h */,
 				EFCDC7871A187C8700B1F7F2 /* ViewController.m */,
+				EFCDC7A51A187D2D00B1F7F2 /* curvedLabel.h */,
+				EFCDC7A61A187D2D00B1F7F2 /* curvedLabel.m */,
 				EFCDC7891A187C8700B1F7F2 /* Main.storyboard */,
 				EFCDC78C1A187C8700B1F7F2 /* Images.xcassets */,
 				EFCDC78E1A187C8700B1F7F2 /* LaunchScreen.xib */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFCDC7881A187C8700B1F7F2 /* ViewController.m in Sources */,
+				EFCDC7A71A187D2D00B1F7F2 /* curvedLabel.m in Sources */,
 				EFCDC7851A187C8700B1F7F2 /* AppDelegate.m in Sources */,
 				EFCDC7821A187C8700B1F7F2 /* main.m in Sources */,
 			);
